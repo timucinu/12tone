@@ -1,0 +1,8 @@
+#N canvas 1114 557 640 204 12;
+#X obj 6 42 cnv 1 625 1 empty empty empty 8 12 0 13 #000000 #000000 0;
+#X obj 25 12 lengthselect;
+#X obj 28 165 lengthselect;
+#X listbox 28 132 36 0 0 0 - - - 0;
+#X text 118 12 - note length selector;
+#X text 27 52 The note values in ms \, calculated by the [notelength] object \, are received by the "r nl" object. With each bang \, the note values defined via the "inlet" object are triggered \, adjusting the sequences timing through the delay object. It connects to a list box to manage these note values., f 84;
+#X connect 3 0 2 0;

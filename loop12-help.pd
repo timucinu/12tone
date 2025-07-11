@@ -1,0 +1,14 @@
+#N canvas 1146 95 637 245 12;
+#X obj 6 42 cnv 1 625 1 empty empty empty 8 12 0 13 #000000 #000000 0;
+#X obj 25 11 loop12;
+#X obj 29 130 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 152 130 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X text 176 131 loop stop;
+#X text 51 131 loop start;
+#X obj 29 170 loop12, f 18;
+#X msg 29 210 write;
+#X text 92 11 - twelve tone looper;
+#X text 26 53 When the loop start button is pressed \, the output of the "write" object it is connected to \, if it is connected to a [textmidi] object \, starts the sequence up to 12 When the toggle connected to the right inlet is opened \, each loop stops at 12 and the write operation ends., f 84;
+#X connect 2 0 6 0;
+#X connect 3 0 6 1;
+#X connect 6 0 7 0;

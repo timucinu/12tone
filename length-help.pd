@@ -1,0 +1,6 @@
+#N canvas 1297 97 640 219 12;
+#X obj 6 42 cnv 1 625 1 empty empty empty 8 12 0 13 #000000 #000000 0;
+#X obj 25 12 length;
+#X msg 30 128 \; lengthselect 4 8 1 2 2 4 1 8 16 2 1 4 \; lengthselectR 4 1 2 4 8 16 32 4 1 2 8 16 \; lengthselectIN 4 1 2 16 8 1 4 2 2 1 8 4 \; lengthselectIR 16 8 2 1 4 32 16 8 4 2 1 4;
+#X text 27 52 It sends the defined note value numbers for prime \, retrograde \, inversion \, and retrograde inversion to the [lengthselect] internal objects via a message box. The message box must contain twelve numbers for the twelve-tone sequence \, with each line naming the associated object for each sequence., f 84;
+#X text 89 12 - note length container;

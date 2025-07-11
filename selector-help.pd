@@ -1,0 +1,12 @@
+#N canvas 1146 95 637 226 12;
+#X obj 6 42 cnv 1 625 1 empty empty empty 8 12 0 13 #000000 #000000 0;
+#X text 106 11 - twelve tone row selector;
+#X obj 29 181 selector, f 18;
+#X floatatom 152 131 5 0 0 0 - - - 0;
+#X obj 29 95 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X text 56 95 bang;
+#X obj 25 11 selector;
+#X text 201 128 sets the row (0-prime \, 1-retrograde \, 2-inversion 3-retrograde inversion);
+#X text 26 53 It connects to the [arnold] object and allows the desired row to be called., f 84;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;

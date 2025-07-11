@@ -1,0 +1,17 @@
+#N canvas 1146 95 640 337 12;
+#X obj 6 42 cnv 1 625 1 empty empty empty 8 12 0 13 #000000 #000000 0;
+#X obj 25 11 chorder_1;
+#X obj 30 217 chorder_1;
+#X obj 30 135 metro;
+#X floatatom 90 269 5 0 0 0 - - - 0;
+#X obj 30 270 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X floatatom 90 172 5 0 0 0 - - - 0;
+#X text 106 11 - twelve tone chord generator;
+#X text 137 166 voice selector. when 0 is selected \, only mono output is produced.;
+#X text 132 270 counter output;
+#X text 29 296 bang output;
+#X text 26 53 The [chorder_1] object allows multiple tones to be played simultaneously \, enabling chord creation within a twelve tone sequence. It triggers as many tones as the number of digits entered in the twelve tone system., f 84;
+#X connect 2 0 5 0;
+#X connect 2 1 4 0;
+#X connect 3 0 2 0;
+#X connect 6 0 2 1;
